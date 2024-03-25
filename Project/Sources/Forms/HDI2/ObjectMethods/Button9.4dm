@@ -1,0 +1,1 @@
+Execute on server:C373("doSomethingInSP"; 0; "SP2"; Form:C1466.setText; Form:C1466.trace)
