@@ -1,6 +1,6 @@
-# HDI_Template_20
+# HDI_4DRemoteSession
 
-Description (4D 20 Rx)
+Use the 4D remote session object with Client/Server application (4D 20 R5)
 
 Find more information on the [blog post](https://blog.4d.com/).
 
