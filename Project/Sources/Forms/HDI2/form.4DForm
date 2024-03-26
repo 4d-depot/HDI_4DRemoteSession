@@ -41,8 +41,8 @@
 				},
 				"Button": {
 					"type": "button",
-					"top": 640,
-					"left": 790,
+					"top": 639,
+					"left": 830,
 					"width": 70,
 					"height": 20,
 					"sizingX": "move",
@@ -60,8 +60,8 @@
 				},
 				"Button1": {
 					"type": "button",
-					"top": 640,
-					"left": 870,
+					"top": 639,
+					"left": 910,
 					"width": 70,
 					"height": 20,
 					"sizingX": "move",
@@ -99,7 +99,8 @@
 						"onClick"
 					],
 					"dataSourceTypeHint": "boolean",
-					"dataSource": "Form:C1466.trace"
+					"dataSource": "Form:C1466.trace",
+					"sizingY": "move"
 				}
 			}
 		},
@@ -151,86 +152,88 @@
 					"events": [
 						"onDataChange"
 					],
-					"class": "description"
+					"class": "description",
+					"sizingX": "grow"
 				},
 				"Rectangle": {
 					"type": "rectangle",
 					"top": 80,
-					"left": 520,
-					"width": 440,
-					"height": 480,
+					"left": 500,
+					"width": 460,
+					"height": 516,
 					"visibility": "hidden",
 					"sizingX": "grow",
-					"sizingY": "grow",
+					"sizingY": "move",
 					"fill": "transparent",
 					"stroke": "#9400D3",
 					"strokeDashArray": "1 1"
 				},
-				"Button2": {
+				"GetclientSession": {
 					"type": "button",
 					"text": "Get Client Session",
 					"top": 80,
-					"left": 520,
-					"width": 197,
+					"left": 500,
+					"width": 218,
 					"height": 22,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button2.4dm"
+					"method": "ObjectMethods/GetclientSession.4dm",
+					"sizingY": "move"
 				},
 				"Input": {
 					"type": "input",
-					"left": 520,
-					"top": 149,
-					"width": 435,
+					"left": 500,
+					"top": 148,
+					"width": 460,
 					"height": 17,
-					"dataSource": "Form:C1466.Session.id"
+					"dataSource": "Form:C1466.Session.id",
+					"sizingY": "move",
+					"enterable": false
 				},
 				"Input1": {
 					"type": "input",
-					"left": 520,
+					"left": 500,
 					"top": 204,
-					"width": 435,
+					"width": 460,
 					"height": 17,
-					"dataSource": "Form:C1466.Session.userName"
+					"dataSource": "Form:C1466.Session.userName",
+					"sizingY": "move",
+					"enterable": false
 				},
 				"Input2": {
 					"type": "input",
-					"left": 520,
+					"left": 500,
 					"top": 260,
-					"width": 435,
-					"height": 161,
-					"dataSource": "Form:C1466.Session.info"
+					"width": 460,
+					"height": 177,
+					"dataSource": "Form:C1466.Session.info",
+					"sizingY": "move",
+					"enterable": false
 				},
 				"Input3": {
 					"type": "input",
-					"left": 520,
-					"top": 463,
-					"width": 435,
-					"height": 97,
-					"dataSource": "Form:C1466.Session.storage"
+					"left": 500,
+					"top": 482,
+					"width": 460,
+					"height": 113,
+					"dataSource": "Form:C1466.Session.storage",
+					"sizingY": "move",
+					"enterable": false
 				},
 				"Text": {
 					"type": "text",
 					"text": "ID:",
 					"top": 124,
-					"left": 520,
+					"left": 500,
 					"width": 96,
 					"height": 16
 				},
 				"Text1": {
 					"type": "text",
 					"text": "storage:",
-					"top": 434,
-					"left": 520,
-					"width": 96,
-					"height": 16
-				},
-				"Text2": {
-					"type": "text",
-					"text": "Storage:",
-					"top": 688,
-					"left": 478,
+					"top": 453,
+					"left": 500,
 					"width": 96,
 					"height": 16
 				},
@@ -238,7 +241,7 @@
 					"type": "text",
 					"text": "info:",
 					"top": 234,
-					"left": 520,
+					"left": 500,
 					"width": 96,
 					"height": 16
 				},
@@ -246,9 +249,22 @@
 					"type": "text",
 					"text": "userName:",
 					"top": 179,
-					"left": 520,
+					"left": 500,
 					"width": 96,
 					"height": 16
+				},
+				"GetStoredProcedureSession": {
+					"type": "button",
+					"text": "Get Stored Procedure Session",
+					"top": 80,
+					"left": 742,
+					"width": 218,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/GetStoredProcedureSession.4dm",
+					"sizingY": "move"
 				}
 			}
 		},
@@ -280,7 +296,7 @@
 					"type": "rectangle",
 					"top": 75,
 					"left": 500,
-					"width": 440,
+					"width": 460,
 					"height": 517,
 					"visibility": "hidden",
 					"sizingX": "move",
@@ -289,31 +305,31 @@
 					"stroke": "#9400D3",
 					"strokeDashArray": "1 1"
 				},
-				"Button3": {
+				"SetStorageW1": {
 					"type": "button",
-					"text": "Set text from \"Worker1\" worker",
-					"top": 177,
+					"text": "Set \"Session.storage.settings.text\" \\from \"Worker1\" worker",
+					"top": 171,
 					"left": 500,
-					"width": 400,
-					"height": 22,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button3.4dm",
-					"sizingX": "move",
-					"sizingY": "fixed"
-				},
-				"Button4": {
-					"type": "button",
-					"text": "Get text from \\ \"Start_00\" process",
-					"top": 300,
-					"left": 500,
-					"width": 206,
+					"width": 439,
 					"height": 40,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button4.4dm",
+					"method": "ObjectMethods/SetStorageW1.4dm",
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"getStoragePstart": {
+					"type": "button",
+					"text": "Get \"Session.storage.settings\" \\from \"Start_00\" process",
+					"top": 332,
+					"left": 500,
+					"width": 246,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/getStoragePstart.4dm",
 					"sizingX": "move",
 					"sizingY": "fixed"
 				},
@@ -321,7 +337,7 @@
 					"type": "text",
 					"text": "text:",
 					"top": 80,
-					"left": 501,
+					"left": 521,
 					"width": 55,
 					"height": 16,
 					"sizingX": "move",
@@ -331,92 +347,94 @@
 					"type": "input",
 					"left": 554,
 					"top": 80,
-					"width": 346,
+					"width": 406,
 					"height": 17,
 					"dataSource": "Form:C1466.setText",
 					"sizingX": "move",
 					"sizingY": "fixed"
 				},
-				"Button5": {
+				"SetStorageW2": {
 					"type": "button",
-					"text": "Set text from \"Worker2\" worker",
-					"top": 214,
-					"left": 501,
-					"width": 400,
-					"height": 22,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button5.4dm",
-					"sizingX": "move",
-					"sizingY": "fixed"
-				},
-				"Button6": {
-					"type": "button",
-					"text": "Set text from \"SP1\" Stored Procedure",
-					"top": 439,
+					"text": "Set \"Session.storage.settings\" \\from \"Worker2\" worker",
+					"top": 220,
 					"left": 500,
-					"width": 400,
-					"height": 22,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button6.4dm",
-					"sizingX": "move",
-					"sizingY": "fixed"
-				},
-				"Button7": {
-					"type": "button",
-					"text": "Get text from \\Stored Procedure",
-					"top": 526,
-					"left": 500,
-					"width": 206,
+					"width": 439,
 					"height": 40,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button7.4dm",
+					"method": "ObjectMethods/SetStorageW2.4dm",
 					"sizingX": "move",
 					"sizingY": "fixed"
 				},
-				"Button8": {
+				"SetStorageSP1": {
 					"type": "button",
-					"text": "Set text from \"Process1\" process",
-					"top": 250,
+					"text": "Set \"Session.storage.settings\" \\from \"SP1\" Stored Procedure",
+					"top": 444,
 					"left": 500,
-					"width": 400,
-					"height": 22,
+					"width": 439,
+					"height": 40,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button8.4dm",
+					"method": "ObjectMethods/SetStorageSP1.4dm",
 					"sizingX": "move",
 					"sizingY": "fixed"
 				},
-				"Input8": {
+				"GetStorageSPGet": {
+					"type": "button",
+					"text": "Get \"Session.storage.settings\" \\from Stored Procedure",
+					"top": 552,
+					"left": 500,
+					"width": 246,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/GetStorageSPGet.4dm",
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"SetStorageP1": {
+					"type": "button",
+					"text": "Set \"Session.storage.settings\" \\from \"Process1\" process",
+					"top": 270,
+					"left": 500,
+					"width": 439,
+					"height": 40,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/SetStorageP1.4dm",
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"GetText": {
 					"type": "input",
-					"left": 740,
-					"top": 312,
-					"width": 180,
+					"left": 760,
+					"top": 343,
+					"width": 200,
 					"height": 17,
 					"dataSource": "Form:C1466.GetText",
 					"sizingX": "move",
-					"sizingY": "fixed"
+					"sizingY": "fixed",
+					"enterable": false
 				},
-				"Input5": {
+				"GetSPText": {
 					"type": "input",
-					"left": 740,
-					"top": 538,
-					"width": 180,
+					"left": 759,
+					"top": 564,
+					"width": 200,
 					"height": 17,
 					"dataSource": "Form:C1466.GetSPText",
 					"sizingX": "move",
-					"sizingY": "fixed"
+					"sizingY": "fixed",
+					"enterable": false
 				},
 				"Text5": {
 					"type": "text",
 					"text": "Client/Server session:",
-					"top": 144,
+					"top": 142,
 					"left": 501,
 					"width": 197,
 					"height": 16,
@@ -427,7 +445,7 @@
 				"Text7": {
 					"type": "text",
 					"text": "Procedure Stored session:",
-					"top": 403,
+					"top": 418,
 					"left": 500,
 					"width": 197,
 					"height": 16,
@@ -435,21 +453,34 @@
 					"sizingX": "move",
 					"sizingY": "fixed"
 				},
-				"Button9": {
+				"SetStorageSP2": {
 					"type": "button",
-					"text": "Set text from \"SP2\" Stored Procedure",
-					"top": 475,
+					"text": "Set \"Session.storage.settings\" \\from \"SP2\" Stored Procedure",
+					"top": 493,
 					"left": 500,
-					"width": 400,
-					"height": 22,
+					"width": 439,
+					"height": 40,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button9.4dm",
+					"method": "ObjectMethods/SetStorageSP2.4dm",
 					"sizingX": "move",
 					"sizingY": "fixed"
 				}
-			}
+			},
+			"entryOrder": [
+				"information1",
+				"Input4",
+				"SetStorageW1",
+				"SetStorageW2",
+				"SetStorageP1",
+				"getStoragePstart",
+				"GetText",
+				"SetStorageSP1",
+				"SetStorageSP2",
+				"GetStorageSPGet",
+				"GetSPText"
+			]
 		}
 	],
 	"$4d": {
@@ -463,5 +494,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 341
+	"geometryStamp": 617
 }

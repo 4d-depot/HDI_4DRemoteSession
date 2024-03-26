@@ -1,5 +1,5 @@
 //%attributes = {}
-#DECLARE($text : Text; $btrace : Boolean)
+#DECLARE($text : Text; $clientName; $btrace : Boolean)
 
 If ($btrace)
 	TRACE:C157

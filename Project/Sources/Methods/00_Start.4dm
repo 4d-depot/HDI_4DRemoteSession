@@ -3,6 +3,7 @@ C_LONGINT:C283($1)
 C_LONGINT:C283($ps; $win)
 C_OBJECT:C1216($options)
 C_TEXT:C284($cr)
+var $o : Object:=New object:C1471
 
 Case of 
 	: (Count parameters:C259=0)
@@ -48,8 +49,8 @@ Case of
 			QUIT 4D:C291
 		Else 
 			
-			$win:=Open form window:C675("HDI2"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4)
-			DIALOG:C40("HDI2")
+			$o.hWin:=Open form window:C675("HDI2"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4)
+			DIALOG:C40("HDI2"; $o)
 			CLOSE WINDOW:C154
 			
 		End if 
