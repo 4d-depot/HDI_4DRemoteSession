@@ -2,7 +2,7 @@
 
 Use the 4D remote session object with Client/Server application (4D 20 R5)
 
-Find more information on the [blog post](https://blog.4d.com/).
+Find more information on the [blog post](https://blog.4d.com/new-4d-remote-session-object-with-client-server-connection-and-stored-procedure/).
 
 ## Installing and Using a 4D Project
 
